@@ -15,7 +15,7 @@ import jakarta.ws.rs.core.MediaType;
 import static java.util.Objects.requireNonNull;
 
 @Path("/some-page")
-@RolesAllowed("admin")
+@RolesAllowed({"admin","user"})
 public class SomePage {
 
     private final Template page;
